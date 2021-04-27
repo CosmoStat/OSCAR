@@ -49,10 +49,16 @@ conda install -c conda-forge scikit-image
 
 * α-shearlet Transform
 
-&nbsp;&nbsp;&nbsp;&nbsp;Clone or download the library using the following link : 
-https://github.com/dedale-fet/alpha-transform
+&nbsp;&nbsp;&nbsp;&nbsp;Clone the library (https://github.com/dedale-fet/alpha-transform) and run the commands below to get the approriate version  : 
 
-&nbsp;&nbsp;&nbsp;&nbsp;Add the path of the α-shearlet Transform library to the PYTHONPATH variable in the bash profile
+```sh
+git clone https://github.com/dedale-fet/alpha-transform.git
+cd alpha-transform/
+git checkout adcf993
+```
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;Then add the path of the α-shearlet Transform library to the PYTHONPATH variable in the bash profile
 
 ```sh
 export PYTHONPATH="$HOME/path/to/alpha-transform-master:$PYTHONPATH"
