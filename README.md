@@ -49,10 +49,16 @@ conda install -c conda-forge scikit-image
 
 * α-shearlet Transform
 
-&nbsp;&nbsp;&nbsp;&nbsp;Clone or download the library using the following link : 
-https://github.com/dedale-fet/alpha-transform
+&nbsp;&nbsp;&nbsp;&nbsp;Clone the library (https://github.com/dedale-fet/alpha-transform) and run the commands below to get the approriate version  : 
 
-&nbsp;&nbsp;&nbsp;&nbsp;Add the path of the α-shearlet Transform library to the PYTHONPATH variable in the bash profile
+```sh
+git clone https://github.com/dedale-fet/alpha-transform.git
+cd alpha-transform/
+git checkout adcf993
+```
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;Then add the path of the α-shearlet Transform library to the PYTHONPATH variable in the bash profile
 
 ```sh
 export PYTHONPATH="$HOME/path/to/alpha-transform-master:$PYTHONPATH"
@@ -139,7 +145,7 @@ The following is an exhaustive list of parameters of `score` :
 
 ## Reproducible Research
 
-The code `generate_dataset.py` allows to recreate the exactly the same dataset used for the numerical experiments of the [original paper of `score`](https://www.google.com/doodles/30th-anniversary-of-pac-man). To be able to run this code, the catalog `COSMOS_25.2_training_sample` is required. It is available as a compressed file, `COSMOS_25.2_training_sample.tar.gz`, on [this link](https://github.com/GalSim-developers/GalSim/wiki/RealGalaxy%20Data).
+The code `generate_dataset.py` allows to recreate the exactly the same dataset used for the numerical experiments of the [original paper of `score`](https://arxiv.org/abs/2101.10021). To be able to run this code, the catalog `COSMOS_25.2_training_sample` is required. It is available as a compressed file, `COSMOS_25.2_training_sample.tar.gz`, on [this link](https://github.com/GalSim-developers/GalSim/wiki/RealGalaxy%20Data).
 
 ## Authors 
 
