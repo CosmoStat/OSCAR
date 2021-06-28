@@ -293,6 +293,10 @@ class score:
                 self.verbose = kwargs['verbose']
             else:
                 raise TypeError("'verbose' must be a boolean.")
+                
+        #thresholds for hard thresholding
+        if 'thresholds' in kwargs:
+            self.thresholds = kwargs['thresholds']       
             
     def set_defaults(self,**kwargs):
         """This methods set the parameters which value has not been given by
@@ -660,8 +664,9 @@ class score:
         if self.sigma == None:
             self.estimate_centroid()
             self.estimate_sigma()
-        
-        self.set_thresholds()
+            
+        if np.all(self.thresholds == None):
+            self.set_thresholds()
     
     def forward_backward(self):
         """This method applies the forward backward algorithm.
