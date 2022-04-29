@@ -82,7 +82,7 @@ conda install -c conda-forge matplotlib
 After install the prerequisites, clone or download `score` repository. And to be able to access from any working directory, use the following command to add the path to `score` to PYTHONPATH variable in the bash profile :
 
 ```sh
-export PYTHONPATH="$HOME/path/to/alpha-transform-master:$PYTHONPATH"
+export PYTHONPATH="$HOME/path/to/score:$PYTHONPATH"
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_Replace `path/to` by the corresponding path_
 
